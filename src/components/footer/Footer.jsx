@@ -2,11 +2,16 @@ import React from 'react'
 import './footer.css'
 import {FiInstagram} from 'react-icons/fi'
 import {BsTwitter} from 'react-icons/bs'
+import { motion } from 'framer-motion'
+import { footerVariants } from '../../framer'
 
 
 const Footer = () => {
   return (
-    <footer>
+    <motion.footer
+        variants = {footerVariants}
+        initial = "hidden"
+        whileInView= "show">
       <a href="#" className='footer__logo'>Neha</a> 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
@@ -27,7 +32,7 @@ const Footer = () => {
      </div>
 
 
-    </footer>
+    </motion.footer>
   )
 }
 

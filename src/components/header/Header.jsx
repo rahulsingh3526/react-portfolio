@@ -4,18 +4,39 @@ import CTA from './CTA'
 import ME from '../../assets/me.png'
 import HeaderSocials from './HeaderSocials'
 import { motion } from "framer-motion"
+import { headerVariants, staggerContainer } from '../../framer'
+import { TypingText } from '../../Text'
 
 
 
 const Header = () => {
   return (
  <header>
-    <div className="container header__container">
+    <motion.div 
+    className="container header__container"
+    variants = {headerVariants}
+    initial = "hidden"
+    whileInView= "show"
+    // initial ={{y: -250, opacity: 0}}
+    // animate ={{y: 50, opacity: 1}}
+    // transition={{ duration: 0.8 }}
+    >
+      <div>
+      
       <h5>Hello I'm</h5>
-      <h1>Neha Kumari</h1>
+      <motion.h1
+       variants={staggerContainer}
+       initial = "hidden"
+       whileInView="show"
+       viewport ={{once: false, amount : 1}}
+       ><TypingText 
+        title ="Rahul Singh"
+        textStyles="text-center"/>
+        </motion.h1>
       <h5 className="text-light">Fullstack Developer</h5>
       <CTA />
       <HeaderSocials />
+      </div>
 
       <motion.div 
       className="me"
@@ -28,7 +49,7 @@ const Header = () => {
 
       <a href="#contact" className='scroll__down'>Scroll Down</a>
 
-    </div>
+    </motion.div>
  </header>
   )
 }

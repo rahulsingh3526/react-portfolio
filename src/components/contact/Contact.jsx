@@ -4,6 +4,9 @@ import {MdOutlineEmail} from'react-icons/md'
 import {BsWhatsapp} from'react-icons/bs'
 import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
+import { motion } from 'framer-motion'
+import { TypingText } from '../../Text'
+import { staggerContainer } from '../../framer'
 
 
 const Contact = () => {
@@ -20,7 +23,15 @@ const Contact = () => {
   return (
 <section id='contact'>
   <h5>Get In Touch</h5>
-  <h2>Contact Me</h2>
+  <motion.h2
+       variants={staggerContainer}
+       initial = "hidden"
+       whileInView="show"
+       viewport ={{once: false, amount : .5}}
+       ><TypingText 
+        title ="Contact Me"
+        textStyles="text-center"/>
+  </motion.h2>
 
   <div className="container contact__container">
     <div className="contact__options">
@@ -46,7 +57,13 @@ const Contact = () => {
       <input type="text" name='name' placeholder='Your Full Name' required />
       <input type="email" name='email' placeholder='Your Email' required/>
       <textarea name="message" id="" rows="7" placeholder='Your Message' required></textarea>
-      <button type='submit' className='btn btn-primary'>Send Message</button>
+      <motion.button 
+      type='submit' 
+      className='btn btn-primary'
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.9 }}
+      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      >Send Message</motion.button>
     </form>
   </div>
 </section>  )

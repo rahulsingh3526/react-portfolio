@@ -12,6 +12,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../../framer'
+import { TypingText } from '../../Text'
+
 const data = [
   {
     avatar: AVTR1,
@@ -43,7 +47,15 @@ const Testimonials = () => {
   return (
 <section id='testimonials'>
   <h5>Review from clients</h5>
-  <h2>Testimonials</h2>
+  <motion.h2
+       variants={staggerContainer}
+       initial = "hidden"
+       whileInView="show"
+       viewport ={{once: false, amount : .5}}
+       ><TypingText 
+        title ="Testmonials"
+        textStyles="text-center"/>
+  </motion.h2>
 
   <Swiper className="container testimonials__container"
    modules={[Pagination]}

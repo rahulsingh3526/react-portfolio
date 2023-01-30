@@ -1,12 +1,23 @@
 import React from 'react'
 import './services.css'
 import {BiCheck} from 'react-icons/bi'
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../../framer'
+import { TypingText } from '../../Text'
 
 const Services = () => {
   return (
 <section id='services'>
  <h5>What I Offer</h5>
- <h2>Services</h2>
+      <motion.h2
+       variants={staggerContainer}
+       initial = "hidden"
+       whileInView="show"
+       viewport ={{once: false, amount : .5}}
+       ><TypingText 
+        title ="Services"
+        textStyles="text-center"/>
+        </motion.h2>
 
 <div className="container services__container">
   <article className="service">

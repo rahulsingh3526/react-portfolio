@@ -2,13 +2,23 @@ import React from 'react'
 import './experience.css'
 import { BsPatchCheckFill} from 'react-icons/bs'
 import { motion } from "framer-motion"
+import { TypingText } from '../../Text'
+import { staggerContainer } from '../../framer'
+
 
 const Experience = () => {
   return (
     <section id='experience'>
       <h5>What Skills I have</h5>
-      <h2>My Experience</h2>
-
+      <motion.h2
+       variants={staggerContainer}
+       initial = "hidden"
+       whileInView="show"
+       viewport ={{once: false, amount : .5}}
+       ><TypingText 
+        title ="My Experience"
+        textStyles="text-center"/>
+        </motion.h2>
       <div className="container experience__container">
         <motion.div 
         className="experience__frontend"
