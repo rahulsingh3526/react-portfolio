@@ -63,6 +63,15 @@ header{
     font-size: 0.9rem;
 }
 
+.header__socialss{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    right: 0;
+    bottom: 3rem;
+}
 /* media queries(medium devices)*/
 
 @media screen and (max-width: 1024px){

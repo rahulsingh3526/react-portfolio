@@ -12,7 +12,7 @@ const Footer = () => {
         variants = {footerVariants}
         initial = "hidden"
         whileInView= "show">
-      <a href="#" className='footer__logo'>Neha</a> 
+      <a href="#" className='footer__logo'>Rahul</a> 
       <ul className='permalinks'>
         <li><a href="#">Home</a></li>
         <li><a href="#about">About</a></li>

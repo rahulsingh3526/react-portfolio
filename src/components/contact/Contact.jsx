@@ -2,14 +2,17 @@ import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from'react-icons/md'
 import {BsWhatsapp} from'react-icons/bs'
-import { useRef } from 'react'
 import emailjs from '@emailjs/browser'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import { TypingText } from '../../Text'
 import { staggerContainer } from '../../framer'
+import { useRef } from "react";
+
 
 
 const Contact = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: false });
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -33,8 +36,13 @@ const Contact = () => {
         textStyles="text-center"/>
   </motion.h2>
 
-  <div className="container contact__container">
-    <div className="contact__options">
+  <div className="container contact__container" ref={ref} >
+    <div style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }} 
+        className="contact__options">
       <article className="contact__option">
         <MdOutlineEmail className='contact__option-icon'/>
         <h4>Email</h4>
@@ -62,7 +70,7 @@ const Contact = () => {
       className='btn btn-primary'
       whileHover={{ scale: 1.2 }}
       whileTap={{ scale: 0.9 }}
-      transition={{ type: "spring", stiffness: 400, damping: 17 }}
+      transition={{ type: "spring", stiffness: 250, damping: 10 }}
       >Send Message</motion.button>
     </form>
   </div>

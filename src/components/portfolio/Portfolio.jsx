@@ -6,9 +6,11 @@ import IMG3 from '../../assets/portfolio3.jpg'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion' // refer slide.jsx
 import { staggerContainer } from '../../framer'
 import { TypingText } from '../../Text'
+import { useRef } from 'react'
+
 
 const data = [
   {
@@ -63,8 +65,10 @@ const data = [
 
 
 const Portfolio = () => {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true });
   return (
-    <section id='portfolio'>
+    <section id='portfolio' ref={ref}>
       <h5>My Recent Work</h5>
       <motion.h2
        variants={staggerContainer}
@@ -76,7 +80,11 @@ const Portfolio = () => {
         textStyles="text-center"/>
         </motion.h2>
 
-      <div className="container portfolio__container">
+      <div className="container portfolio__container" style={{
+          transform: isInView ? "none" : "translateX(-200px)",
+          opacity: isInView ? 1 : 0,
+          transition: "all 0.9s cubic-bezier(0.17, 0.55, 0.55, 1) 0.5s"
+        }} >
 
         {
           data.map(({ id, image, title, github, demo }) => {
