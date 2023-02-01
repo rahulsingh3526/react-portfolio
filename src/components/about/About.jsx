@@ -1,8 +1,8 @@
 import React from 'react'
 import './about.css'
-import ME from '../../assets/me-about.jpg'
+import rahul from '../../assets/rahul.jpg'
 import {FaAward} from 'react-icons/fa'
-import {FiUsers} from 'react-icons/fi'
+import {BiGitMerge} from 'react-icons/bi'
 import {VscFolderLibrary} from 'react-icons/vsc'
 import { motion } from 'framer-motion'
 import { staggerContainer } from '../../framer'
@@ -27,7 +27,7 @@ const About = () => {
       <div className="container about__container">
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="a picture of me" />
+            <img src={rahul} alt="a picture of me" />
           </div>
         </div>
 
@@ -36,25 +36,25 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>3+ Years Working</small>
+              <small>1+ Years Working</small>
               </article>
 
               <article className='about__card'>
-              <FiUsers className='about__icon' />
-              <h5>Clients</h5>
-              <small>200+ Worldwide</small>
+              <BiGitMerge className='about__icon' />
+              <h5>Opensource</h5>
+              <small>200+ Commits</small>
               </article>
 
               <article className='about__card'>
               <VscFolderLibrary className='about__icon' />
               <h5>Projects</h5>
-              <small>80+ Completed</small>
+              <small>15+ Completed</small>
             </article>
 
           </div>
 
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem in aut nemo rerum, corporis aliquid ut, quo nisi quos, doloremque unde optio architecto voluptate illo nesciunt vel minima quod quaerat!
+           Initially a solidity fan but later realised that solidity is just 10 % of the whole code of a website. Learned that web3 was overwhelmed since we had to use other web3 infrastructure to support our projects we working on thus decided to give web3 integration of different protocols a priority while learning about web3 products.
           </p>
 
           <a href="#contact" className='btn btn-primary'>Let's Talk</a>

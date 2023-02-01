@@ -20,7 +20,7 @@ const Services = () => {
         </motion.h2>
 
 <div className="container services__container">
-  <article className="service">
+  {/* <article className="service">
     <div className="service__head">
       <h3>UI/UX Design</h3>
       </div>
@@ -50,7 +50,7 @@ const Services = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
           </li>
           </ul>
-          </article>
+          </article> */}
 
           {/* end of ui/ux */}
 
@@ -60,37 +60,25 @@ const Services = () => {
       </div>
 
         <ul className="service__list">
+       
+
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Working with advanced frameworks for frontend development with Nextjs and reactjs which makes it easy to understand by other developers</p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Use of frontend css libraries like tailwind and framer motion used for instant enhancement of a project looks for smooth transition </p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Currently learning graphql for easy tracking of the events emitted during the solidity codes</p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Bringing the best Web3 impletation and easy to use websites with good UI/UX and important implemention like nft marketplace, etc </p>
           </li>
 
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
+         
           </ul>
           </article>
 
@@ -103,28 +91,22 @@ const Services = () => {
 
         <ul className="service__list">
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Made a blog and youtube video on how to install metamask and other wallet with Rainbow kit </p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Made a blog on how to solve hydration error which has over 1000 + views on youtube which is a major issue with rainbow kit</p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Made a very detailed guide to wagmi which is used to connect the frontend to the solidity contract and is part of the integrations.</p>
           </li>
 
           <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <p>Upcoming a whole playlist of framer motion videos for quick and easy integration.</p>
           </li>
 
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
-
-          <li><BiCheck className='service__list-icon'/>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-          </li>
+       
           </ul>
           </article>
 

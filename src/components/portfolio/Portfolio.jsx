@@ -37,29 +37,29 @@ const data = [
     demo: 'https://github.com/neha-kum'
   },
 
-  {
-    id: 4,
-    image: IMG4,
-    title: 'Maintaining tasks and tracking progress',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
-  },
+  // {
+  //   id: 4,
+  //   image: IMG4,
+  //   title: 'Maintaining tasks and tracking progress',
+  //   github: 'https://github.com/neha-kum',
+  //   demo: 'https://github.com/neha-kum'
+  // },
 
-  {
-    id: 5,
-    image: IMG5,
-    title: 'Charts templats and infographics',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
-  },
+  // {
+  //   id: 5,
+  //   image: IMG5,
+  //   title: 'Charts templats and infographics',
+  //   github: 'https://github.com/neha-kum',
+  //   demo: 'https://github.com/neha-kum'
+  // },
 
-  {
-    id: 6,
-    image: IMG6,
-    title: 'Charts templats and infographics in Figma',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
-  },
+  // {
+  //   id: 6,
+  //   image: IMG6,
+  //   title: 'Charts templats and infographics in Figma',
+  //   github: 'https://github.com/neha-kum',
+  //   demo: 'https://github.com/neha-kum'
+  // },
 
 ]
 
