@@ -1,7 +1,7 @@
 import React from 'react'
 import './contact.css'
 import {MdOutlineEmail} from'react-icons/md'
-import {BsWhatsapp} from'react-icons/bs'
+import {BsTwitter} from 'react-icons/bs'
 import emailjs from '@emailjs/browser'
 import { motion, useInView } from 'framer-motion'
 import { TypingText } from '../../Text'
@@ -51,10 +51,10 @@ const Contact = () => {
       </article>
 
       <article className="contact__option">
-        <BsWhatsapp className='contact__option-icon'/>
-        <h4>Whatsapp</h4>
-        <h5>+91 7880049324</h5>
-        <a href="https://wa.me/917880049324?text=Hello" target='_blank' rel="noreferrer">Send a message</a>
+        <BsTwitter className='contact__option-icon'/>
+        <h4>Twitter</h4>
+        <h5>@rahul3526</h5>
+        <a href="https://twitter.com/rahul3526" target='_blank' rel="noreferrer">Send a message</a>
       </article>
 
     </div>

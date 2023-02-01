@@ -124,7 +124,7 @@ const Experience = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Hardhat</h4>
+                <h4>Valist</h4>
               </div>
             </article>
 
@@ -138,14 +138,14 @@ const Experience = () => {
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>Thirdweb</h4>
+                <h4>Ipfs</h4>
               </div>
             </article>
 
             <article className='experience__details'>
               <BsPatchCheckFill className='experience__details-icon' />
               <div>
-                <h4>polygon</h4>
+                <h4>nft.storage</h4>
               </div>
             </article>
 

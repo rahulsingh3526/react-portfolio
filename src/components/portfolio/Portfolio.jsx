@@ -1,8 +1,8 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/portfolio1.jpg'
-import IMG2 from '../../assets/portfolio2.jpg'
-import IMG3 from '../../assets/portfolio3.jpg'
+import ofa from '../../assets/ofa.png'
+import pawsitive from '../../assets/pawsitive.png'
+import portfolio from '../../assets/portfolio.png'
 import IMG4 from '../../assets/portfolio4.jpg'
 import IMG5 from '../../assets/portfolio5.png'
 import IMG6 from '../../assets/portfolio6.jpg'
@@ -15,26 +15,26 @@ import { useRef } from 'react'
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: 'Crypto Currency dashboard & Financial Visualization',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
+    image: ofa,
+    title: 'Web3 Protocol Integration made easy for developers',
+    github: 'https://github.com/One-For-All-Web3/OFA-Main',
+    demo: 'https://ofa-main.vercel.app/'
   },
 
   {
     id: 2,
-    image: IMG2,
-    title: 'Charts templates & infographics in Figma',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
+    image: pawsitive,
+    title: 'Pawsitive , An initiative to solve the problem of streets in india',
+    github: 'https://github.com/PrasannaJung/save-them',
+    demo: 'https://save-them-w1x3-prasannajung.vercel.app/'
   },
 
   {
     id: 3,
-    image: IMG3,
-    title: 'Figma dashboard UI kit for data design web apps',
-    github: 'https://github.com/neha-kum',
-    demo: 'https://github.com/neha-kum'
+    image: portfolio,
+    title: 'Portfolio, One of the best website i have made till date ',
+    github: 'https://github.com/rahulsingh3526/My-Portfolio',
+    demo: 'https://my-portfolio-five-snowy.vercel.app/'
   },
 
   // {
