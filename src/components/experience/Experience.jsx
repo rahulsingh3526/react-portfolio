@@ -22,7 +22,7 @@ const Experience = () => {
        whileInView="show"
        viewport ={{once: false, amount : .5}}
        ><TypingText 
-        title ="My Experience"
+        title ="Tech Stack"
         textStyles="text-center"/>
         </motion.h2>
       <div className="container experience__container">
